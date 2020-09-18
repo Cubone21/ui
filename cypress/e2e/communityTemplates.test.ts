@@ -139,7 +139,8 @@ describe('Community Templates', () => {
       cy.getByTestID('installed-template-docker').should('be.visible')
     })
 
-    it('Install Identical template', () => {
+    // flaky test in ci
+    it.skip('Install Identical template', () => {
       cy.getByTestID('lookup-template-input').clear()
       cy.getByTestID('lookup-template-input').type(
         'https://github.com/influxdata/community-templates/blob/master/docker/docker.yml'

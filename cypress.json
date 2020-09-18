@@ -2,6 +2,7 @@
   "numTestsKeptInMemory": 25,
   "integrationFolder": "cypress/e2e",
   "defaultCommandTimeout": 10000,
+  "requestTimeout": 15000,
   "chromeWebSecurity": false,
   "env": {
     "username": "dev_user",
